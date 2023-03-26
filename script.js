@@ -60,3 +60,11 @@ const typed = new Typed('.multiple-text', {
 function submitform(){
     alert('Message Has Been Sent Successfully!!');
 }
+
+function cv(){
+    alert('CV is Currently On Update, Come Back Soon!');
+}
+
+function readme(){
+    alert('About Page is Currently on Update, Come Back Soon!');
+}
