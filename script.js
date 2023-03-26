@@ -7,9 +7,6 @@ menuIcon.onclick = () => {
 };
 
 
-
-
-
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -47,7 +44,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', { origin: 'bottom'});
+ScrollReveal().reveal('.home-img, .certificates-box, .portfolio-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
@@ -59,3 +56,7 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+function submitform(){
+    alert('Message Has Been Sent Successfully!!');
+}

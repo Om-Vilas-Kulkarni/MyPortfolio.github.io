@@ -195,6 +195,86 @@ span{
     margin: 2rem 0 3rem;
 }
 
+/* certificates-section */
+
+.certificates{
+    padding-bottom: 10rem;
+}
+
+.certificates h2{
+    margin-bottom: 4rem;
+}
+
+.certificates-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.certificates-container .certificates-box{
+    position: relative;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.certificates-box img{
+    width:100%;
+}
+
+.certificates-box:hover img{
+    transform: scale(1.03);
+    transition: .5s ease;
+}
+
+.certificates-box .certificates-layer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,.1), rgb(106, 29, 230));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.certificates-box:hover .certificates-layer{
+
+    transform: translateY(0);
+}
+
+.certificates-layer h4{
+    font-size: 3rem;
+}
+.certificates-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.certificates-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.certificates-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+/* portfolio-section */
+
 .portfolio{
     background: var(--second-bg-color);
 }
@@ -271,6 +351,8 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+/* contact-section */
 
 .contact h2{
     margin-bottom: 3rem;
@@ -363,8 +445,12 @@ span{
         padding: 10rem 3% 2rem;
     }
 
+    .certificates{
+        padding-bottom: 7rem;
+    }
+
     .portfolio{
-            padding-bottom: 7rem;
+        padding-bottom: 7rem;
     }
 
     .contact{
@@ -429,6 +515,10 @@ span{
         margin-top: 4rem;
     }
 
+    .certificates h2{
+        margin-bottom: 3rem;
+    }
+
     .portfolio h2{
         margin-bottom: 3rem;
     }
@@ -436,10 +526,19 @@ span{
     .portfolio-container{
         grid-template-columns: repeat(2,1fr);
     }
+
+    
+    .certificates-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media (max-width:617px){
     .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+
+    .certificates-container{
         grid-template-columns: 1fr;
     }
 }
