@@ -59,6 +59,7 @@ const typed = new Typed('.multiple-text', {
 
 function submitform(){
     alert('Message Has Been Sent Successfully!!');
+
 }
 
 function cv(){
